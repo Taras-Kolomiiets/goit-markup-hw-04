@@ -329,20 +329,87 @@ img {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  color: var(--social-links-color);
 }
 .social-link:hover,
 .social-link:focus {
   color: var(--accent-color);
   border-radius: 50%;
+  background-color: var(--accent-color);
 }
 .icon-social-links {
-  fill: var(--social-links-color);
+  fill: currentColor;
   width: 20px;
   height: 20px;
 }
 .icon-social-links:hover,
 .icon-social-links:focus {
   fill: var(--primary-white-color);
+}
+/* Наші клієнти */
+.section-title .clients {
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+.client-item {
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  color: var(--social-links-color);
+}
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+.client-link {
+  width: 170px;
+  height: 92px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--social-links-color);
+  color: var(--social-links-color);
+}
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.icon-client {
+  fill: currentColor;
+}
+.icon-client:hover,
+.icon-client:focus {
+  color: var(--accent-color);
+}
+.icon-client.one {
+  width: 41px;
+  height: 46.7px;
+}
+.icon-client.two {
+  width: 40px;
+  height: 52px;
+}
+.icon-client.three {
+  width: 43.46px;
+  height: 41.18px;
+}
+.icon-client.four {
+  width: 84.44px;
+  height: 40.62px;
+}
+.icon-client.five {
+  width: 62.54px;
+  height: 45.43px;
+}
+.icon-client.six {
+  width: 93.79px;
+  height: 45.93px;
 }
 /* Футер */
 .footer {
