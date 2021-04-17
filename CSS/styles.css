@@ -10,6 +10,7 @@
   --border-color: #eeeeee;
   --line-color: #ececec;
   --overlay-color: rgba(47, 48, 58, 0.4);
+  --social-links-color: #afb1b8;
   --card-set-gap: 30px;
 }
 
@@ -138,9 +139,14 @@ img {
   color: var(--accent-color);
 }
 .icon-nav {
+  fill: currentColor;
   width: 16px;
   height: 12px;
   margin-right: 10px;
+}
+.icon-nav:hover,
+.icon-nav:focus {
+  fill: var(--accent-color);
 }
 .icon-nav.smartphone {
   width: 10px;
@@ -220,26 +226,19 @@ img {
 .advantages-list-item:last-child {
   margin-right: 0;
 }
-.advantages-list-item::before {
+.thumb {
   margin-bottom: 30px;
   display: block;
-  content: '';
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 4px;
   height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
+  text-align: center;
   background-color: var(--buttons-color);
 }
-.icon-antenna::before {
-  background-image: url('../images/svg/antenna.svg');
-}
-.icon-clock::before {
-  background-image: url('../images/svg/clock.svg');
-}
-.icon-diagramma::before {
-  background-image: url('../images/svg/diagram.svg');
-}
-.icon-actronaut::before {
-  background-image: url('../images/svg/astronaut.svg');
+.icon-advantages {
+  width: 70px;
+  height: 70px;
 }
 .advantages-list-title {
   font-weight: 700;
@@ -312,7 +311,38 @@ img {
   line-height: 1.19;
   text-align: center;
   margin-top: 0px;
+  margin-bottom: 16px;
+}
+.social-links-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
   padding-bottom: 30px;
+}
+.social-list-item:not(:first-child) {
+  margin-left: 10px;
+}
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-link:hover,
+.social-link:focus {
+  color: var(--accent-color);
+  border-radius: 50%;
+}
+.icon-social-links {
+  fill: var(--social-links-color);
+  width: 20px;
+  height: 20px;
+}
+.icon-social-links:hover,
+.icon-social-links:focus {
+  fill: var(--primary-white-color);
 }
 /* Футер */
 .footer {
