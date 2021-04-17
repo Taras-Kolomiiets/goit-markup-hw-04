@@ -124,6 +124,8 @@ img {
   margin-left: 50px;
 }
 .contacts-nav .item {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -134,6 +136,15 @@ img {
 .contacts-nav .item:hover,
 .contacts-nav .item:focus {
   color: var(--accent-color);
+}
+.icon-nav {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.icon-nav.smartphone {
+  width: 10px;
+  height: 16px;
 }
 /* Герой */
 .hero {
